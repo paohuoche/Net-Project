@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Net-practice</title>
+	<link rel="stylesheet" type="text/css" href="source/practice.css">
+	<link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+</head>
+<body>
+<div id="dark"></div>
+
+<div id="signin">
+	<div id="closeBt"></div>
+	<p>登录网易云课堂</p>
+	<p style="display:none; text-align: center; color: #C81212; font-size: 12px;" id="loginerror"></p>
+	<form id="logform">
+		<input type="text" name="userName" placeholder="账号" >
+		<input type="password" name="password" placeholder="密码" >
+		<button name="submit">登&nbsp;&nbsp;录</button>
+	</form>
+</div>
+
+<div id="video">
+	<div id="v-closeBt"></div>
+	<p>请观看下面的视频</p>
+	<div id="video-container">
+		<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4">
+		</video>
+		<div class="v-control">
+			<ul id="v-left" class="clearfix">
+				<li class="v-bt" id="pl-pa">
+				</li>
+				<li>
+					<span id="v-current" class="not-select">00:00 </span><span class="not-select">/</span><span id="all-long" class="not-select"></span>
+				</li>
+			</ul>
+			<ul id="v-right" class="clearfix">
+					<li class="v-bt">
+						<i id="vol-icon" class="fa fa-volume-up"></i>
+
+						<div id="v-vol">
+							<div id="v-volbar">
+								<div id="v-vol-dot" style="bottom: 29px;"></div>
+								<div id="vol-colorbar" style=" height:33px;"></div>
+							</div>
+						</div>
+
+					</li>
+					<li class="v-bt">
+						<i id="maxScreen" class="fa fa-expand"></i>
+					</li>
+			</ul>
+		</div>
+		<div class="v-progess">
+			<div id="v-bar"></div>
+			<div id="dot" style="left: 0;"></div>
+			<div id="v-buffer"></div>
+		</div>
+	</div>
+</div> 
+
+
+<div id="ad">
+<div class="center">
+	<p>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！  
+		<a class="h-no-underline" href="#">立即查看></a>
+		<span id="nomore"><img src="source/close.png"> 不再显示
+		</span>
+	</p>
+</div>
+</div>
+
+<div id="head">
+	<div class="center">
+		<ul id="head-left" class="v-center">
+			<li id="en-logo">EDU</li>
+			<li id="ch-logo">网易教育产品部</li>
+			<li>
+				<div id="follow" class="focus clearfix">
+					<span id="followbt">关注</span>
+					<span id="cancel" style="display: none"><a class="h-underline" href="###">取消</a></span>
+				</div>
+			</li>
+			<li>
+				<p>粉丝<span id="fans-num">45</span></p>
+			</li>
+		</ul>
+
+		<ul id="head-right">
+			<li><a href="http://open.163.com">网易公开课</a></li>
+			<li><a href="http://study.163.com">网易云课堂</a></li>
+			<li><a href="http://www.icourse.163.org">中国大学 MOOC</a></li>
+		</ul>
+
+	</div>	
+</div>
+
+<div id="banner">
+	<div id="banner-viewer">
+		<div id="banner-slider">
+			<a href="###" id="bn-pic0" style="position: relative; visibility: hidden;">
+				<img src="source/banner1.jpg">
+			</a>
+
+			<a href="###" id="bn-pic1" class="banner-pic">
+				<img src="">
+			</a>
+			<a href="###" id="bn-pic2" class="banner-pic">
+				<img src="">
+			</a>
+			<a href="###" id="bn-pic3" class="banner-pic">
+				<img src="">
+			</a>
+
+		</div>
+		<div id="pre" class="change"></div>
+		<div id="next" class="change"></div>
+
+	</div>
+
+	<ul id="playbuttons" class="clearfix">
+		<li class="playbutton pb-selected"></li>
+		<li class="playbutton"></li>
+		<li class="playbutton"></li>
+	</ul>
+
+</div>
+
+<div id="products" class="center clearfix">
+	<div class="product" id="open-class">
+		<h3>网易公开课</h3>
+		<p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+		<span><a href="###">了解更多&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+	</div>
+	<div class="product" id="cloud-class">
+		<h3>云课堂</h3>
+		<p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
+		<span><a href="###">了解更多&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+	</div>
+	<div class="product" id="mooc">
+		<h3>中国大学MOOC</h3>
+		<p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+		<span><a href="###">了解更多&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+	</div>
+</div>
+
+<div id="work-env">
+	<div id="workenv-container" class="clearfix">
+		<div>
+			<img src="source/work-env-1.png">
+		</div>
+		<div>
+			<img src="source/work-env-2.png">
+		</div>
+		<div>
+			<img src="source/work-env-3.png">
+		</div>
+		<div>
+			<img src="source/work-env-4.png">
+		</div>
+		<div>
+			<img src="source/work-env-5.png">
+		</div>
+	</div>
+</div>
+
+<div id="classes">
+	<div class="classes-container clearfix">
+		<div class="classes-main">
+			<div id="class-select" class="clearfix">
+				<p id="product-design" class="class-fenlei cs-selected">产品设计</p>
+				<p id="program-lang" class="class-fenlei">编程语言</p>
+			</div>
+			<div id="classshow" class="clearfix">
+
+			</div>
+			<ul id="page" class="clearfix">
+
+			</ul>
+		</div>
+		<div class="classes-side">
+			<div id="company-intro">
+				<p>机构介绍</p>
+				<div>
+					<p>观看下面的视频来了解吧：</p>
+					<img src="source/video-pic.png" id="v-show">
+				</div>
+			</div>
+			<div id="top-hot">
+				<p>最热排行</p>
+				<div id="hot-container">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="foot" class="clearfix">
+	<div id="foot-left">
+		<p><span>EDU</span><span>网易教育产品部</span></p>
+		<p>©2014 icourse163.org 浙ICP备08114786号-1</p>
+		<p>courses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+	</div>
+	<div id="foot-right" class="clearfix">
+		<ul>
+			<li><a href="###">网易公开课</a></li>
+			<li><a href="###">网易云课堂</a></li>
+			<li><a href="###">友情链接</a></li>
+			<li><a href="###">中国大学 MOOC</a></li>
+		</ul>
+		<ul>
+			<li><a href="###">我们</a></li>
+			<li><a href="###">关于</a></li>
+			<li><a href="###">联系</a></li>
+			<li><a href="###">关注</a></li>
+		</ul>
+		<ul>
+			<li><a href="###">更多</a></li>
+			<li><a href="###">常见问题</a></li>
+			<li><a href="###">意见反馈</a></li>
+		</ul>
+	</div>
+	
+</div>
+<script type="text/javascript" src="source/md5-min.js"></script>
+<script type="text/javascript" src="source/practice.js"></script>
+
+
+</body>
+</html>
